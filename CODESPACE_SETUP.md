@@ -14,12 +14,14 @@ The Uptown Financial System - Redesigned is fully configured for GitHub Codespac
 ### Option 2: Manual Setup in Existing Codespace
 
 ```bash
-# Install dependencies
-npm install
+# Install dependencies (use --legacy-peer-deps for compatibility)
+npm install --legacy-peer-deps
 
-# Start dev server with port forwarding
+# Start dev server
 npm run dev
 ```
+
+**Note**: The `--legacy-peer-deps` flag is required due to Vite version compatibility.
 
 ---
 
@@ -214,8 +216,8 @@ tail -f /tmp/dev.log
 # Kill dev server
 pkill -f "npm run dev"
 
-# Clean install
-rm -rf node_modules package-lock.json && npm install
+# Clean install (with legacy peer deps)
+rm -rf node_modules package-lock.json && npm install --legacy-peer-deps
 ```
 
 ---
