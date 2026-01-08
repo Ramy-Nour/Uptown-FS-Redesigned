@@ -4,46 +4,25 @@
   "features": {
     "ghcr.io/devcontainers/features/git:1": {}
   },
-  "forwardPorts": [3000, 3001, 3002, 5173, 5174, 8000, 8080],
+  "forwardPorts": [3002, 5174, 8080],
   "portAttributes": {
-    "3000": {
-      "label": "Frontend (Port 3000)",
-      "onAutoForward": "notify",
-      "requireLocalPort": false
-    },
-    "3001": {
-      "label": "Frontend (Port 3001)",
-      "onAutoForward": "notify",
-      "requireLocalPort": false
-    },
     "3002": {
-      "label": "Frontend Dev Server (Port 3002)",
-      "onAutoForward": "notify",
-      "requireLocalPort": false
-    },
-    "5173": {
-      "label": "Vite Dev Server (Port 5173)",
+      "label": "Frontend Dev Server",
       "onAutoForward": "notify",
       "requireLocalPort": false
     },
     "5174": {
-      "label": "Vite Dev Server (Port 5174)",
-      "onAutoForward": "notify",
-      "requireLocalPort": false
-    },
-    "8000": {
-      "label": "API Server (Port 8000)",
+      "label": "Vite Dev Server",
       "onAutoForward": "notify",
       "requireLocalPort": false
     },
     "8080": {
-      "label": "API Server (Port 8080)",
+      "label": "API Server",
       "onAutoForward": "notify",
       "requireLocalPort": false
     }
   },
   "postCreateCommand": "npm install",
-  "postStartCommand": "npm run dev",
   "customizations": {
     "vscode": {
       "extensions": [

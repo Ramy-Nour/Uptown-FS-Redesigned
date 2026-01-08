@@ -25,17 +25,13 @@ npm run dev
 
 ## Automatic Port Forwarding
 
-The `.devcontainer/devcontainer.json` file automatically forwards the following ports:
+The `.devcontainer/devcontainer.json` file automatically forwards the following 3 essential ports:
 
-| Port | Service | Label |
-|------|---------|-------|
-| 3000 | Frontend | Frontend (Port 3000) |
-| 3001 | Frontend | Frontend (Port 3001) |
-| 3002 | Dev Server | Frontend Dev Server (Port 3002) |
-| 5173 | Vite | Vite Dev Server (Port 5173) |
-| 5174 | Vite | Vite Dev Server (Port 5174) |
-| 8000 | API | API Server (Port 8000) |
-| 8080 | API | API Server (Port 8080) |
+| Port | Service | Purpose |
+|------|---------|----------|
+| **3002** | Frontend Dev Server | Main application UI |
+| **5174** | Vite Dev Server | Hot module replacement |
+| **8080** | API Server | Public API endpoints |
 
 ### View Forwarded Ports
 
