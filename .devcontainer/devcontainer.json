@@ -4,20 +4,10 @@
   "features": {
     "ghcr.io/devcontainers/features/git:1": {}
   },
-  "forwardPorts": [3002, 5174, 8080],
+  "forwardPorts": [3000],
   "portAttributes": {
-    "3002": {
-      "label": "Frontend Dev Server",
-      "onAutoForward": "notify",
-      "requireLocalPort": false
-    },
-    "5174": {
-      "label": "Vite Dev Server",
-      "onAutoForward": "notify",
-      "requireLocalPort": false
-    },
-    "8080": {
-      "label": "API Server",
+    "3000": {
+      "label": "Uptown Financial System - Frontend",
       "onAutoForward": "notify",
       "requireLocalPort": false
     }
